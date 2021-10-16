@@ -1,0 +1,106 @@
+body{
+    
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+nav h1 {
+    border-radius: 5px;
+    color: white;
+    background-color:  rgb(9, 177, 255);
+    justify-content: center;
+    text-align: center;
+    font-size: 5vw;
+    margin: auto;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.grid-item {
+    font-weight: bold;
+    background-color: white;
+    text-transform: uppercase;
+    font-size: 3vw;
+    text-align: center;
+    padding: 0.8rem;
+    margin: 1.2rem;
+    border-radius: 5px;
+    border: 1px solid rgb(175, 196, 201);
+    justify-content: center;
+}
+
+.grid-item:hover {
+    color: white;
+    border: none;
+    background-color: rgb(9, 177, 255);
+    box-shadow: 10px 15px 16px 0 rgba(0,0,0,0.2);
+}
+
+.grid-item:hover a {
+    color: white;
+    
+}
+
+.vid {
+    width: 60%;
+    margin: auto;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.vid h1{
+    font-size: 3.5vw;
+    color: rgb(34, 69, 83);
+}
+
+video {
+    margin: auto;
+    border-radius: 15px;
+    border: solid 1px gray;
+    padding: 10px;
+    width: 100%;
+}
+
+a {
+    color: rgb(34, 69, 83);
+    text-align: center;
+    text-decoration: none;
+    
+}
+
+
+.container {
+    margin: 1.2rem;
+}
+
+@media screen and (min-width: 992px){
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    .grid-item {
+        font-size: 1.5vw;
+    }
+
+    .vid h1{
+        font-size: 2.1vw;
+        
+    }
+}
+
+@media screen and (min-width: 800px){
+    .grid-item {
+        font-size: 1.5rem;
+    }
+
+    
+}
