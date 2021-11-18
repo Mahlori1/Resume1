@@ -3,9 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+
+    
+    <title>Skills</title>
 </head>
 <body>
-    
+    <div class="skills-section">
+        
+        <button id="left-btn" type="button" onclick="location.href='education.html'">prev</button>
+        <button id="right-btn" type="button" onclick="location.href='experience.html'">next</button>
+        <h2 id="shome">Hactor Mahlori Mavunda</h2>
+
+        <div class="card">
+            <h1>Skills</h1>
+            <hr>
+            <div class="skills-rating">
+                <p>HTML5</p>
+                <div class="skill-container">
+                    <div class="skills html">100%</div>
+                </div>
+                <br>
+                <p>CSS3</p>
+                <div class="skill-container">
+                    <div class="skills css">80%</div>
+                </div>
+                <br>
+                <p>BOOSTRAP5</p>
+                <div class="skill-container">
+                    <div class="skills bootstrap">70%</div>
+                </div>
+                <br>
+                <p>JavaScript</p>
+                <div class="skill-container">
+                    <div class="skills js">50%</div>
+                </div>
+                <br>
+                <p>Python</p>
+                <div class="skill-container">
+                    <div class="skills python">70%</div>
+                </div>
+                <br>
+                <p>C++</p>
+                <div class="skill-container">
+                    <div class="skills cpp">60%</div>
+                </div>
+                <br>
+                <p>SQL</p>
+                <div class="skill-container">
+                    <div class="skills sql">50%</div>
+                </div>
+                <br>
+                <p>Java</p>
+                <div class="skill-container">
+                    <div class="skills java">40%</div>
+                </div>
+                <br>
+                <p>Microsoft Excel for Data Analysis</p>
+                <div class="skill-container">
+                    <div class="skills msexcel">90%</div>
+                </div>
+                <br>
+                <p>Microsoft Word</p>
+                <div class="skill-container">
+                    <div class="skills msword">100%</div>
+                </div>
+                <br>
+                <p>Microsoft PowerPoint</p>
+                <div class="skill-container">
+                    <div class="skills mspp">100%</div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        document.getElementById("shome").onclick = function () {
+            location.href = "index.html";
+        };
+    </script>
 </body>
 </html>
