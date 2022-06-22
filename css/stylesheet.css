@@ -1,19 +1,46 @@
 body{
-    background: url(image1.jpg);
+    background: url("../images/image1.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: rgb(34, 69, 83);
     font-family: 'Roboto', sans-serif;
-    
+    height: auto;
+    background-attachment: fixed;
 }
 
+footer {
+    color: white;
+    padding: 30px;
+    text-align: center;
+    background-color: rgb(34, 69, 83);
+}
+
+.quickLinks{
+    color: white;
+    background-color: rgb(34, 69, 83);
+    padding: 10px;
+}
+
+.quickLinks ul li{
+    padding: 2px 0;
+}
+
+.quickLinks a{
+    color: white;
+    text-decoration: none;
+}
+
+ul{ 
+    list-style-type: none;
+}
 /* @@@@@@@@@@@@@@@@@@@@@@@@@@@ HOME PAGE @@@@@@@@@@@@@@@@@@@@@@@@ */
 
 .main-container{
     width: 90%;
     margin: auto;
     justify-content: center;
+    height: auto;
+    
 }
 
 nav h1 {
@@ -98,6 +125,12 @@ video {
     margin: 1.2rem;
 }
 
+@media screen and (max-width: 850px){
+   .main-container{
+       padding-bottom: 110px;
+   }
+}
+
 @media screen and (min-width: 768px) {
     .grid-container {
         grid-template-columns: 1fr 1fr 1fr;
@@ -120,12 +153,6 @@ video {
         font-size: 1rem;
     }
 
-}
-
-footer {
-    padding: 30px;
-    text-align: center;
-    background-color: rgb(34, 69, 83);
 }
 
 /* @@@@@@@@@@@@@@@@@@@@@@@@@@@ EDUCATION SECTION @@@@@@@@@@@@@@@@@@@@@@@@ */
@@ -170,6 +197,7 @@ footer {
     text-align: end;
     font-weight: bolder;
     color: rgb(99, 99, 99);
+    vertical-align: bottom;
 }
 
 .item-d {
@@ -237,6 +265,10 @@ footer {
     
 }
 
+.item-h ul li{
+    text-decoration-style: none;
+}
+
 
 @media screen and (min-width: 576px) {
     .varsity-grids{
@@ -263,7 +295,7 @@ footer {
     }
 }
 
-.education-section h2 {
+.heading {
     margin: auto;
     width: 40%;
     font-size: 3.5vw;
@@ -280,46 +312,49 @@ footer {
 }
 
 #left-btn{
+
+    text-transform: capitalize;
     cursor: pointer;
     border-style: none;
     font-weight: bold;
     border-radius: 10px;
-    font-size: medium;
+    font-size: small;
+    margin-top: 50vh;
     padding: 10px;
     color: white;
     background-color: rgb(34, 69, 83);
     float: left;
+    transition: 0.3s;
+}
+
+#left-btn:hover {
+    padding: 12px;
+    background-color: #00458f;
 }
 
 #right-btn{
+
+    text-transform: capitalize;
     cursor: pointer;
     border-style: none;
     font-weight: bold;
     border-radius: 10px;
-    font-size: medium;
+    font-size: small;
+    margin-top: 50vh;
     padding: 10px;
     color: white;
     background-color: rgb(34, 69, 83);
     float: right;
+    transition: 0.3s;
+    
+}
+
+#right-btn:hover{
+    padding: 12px;
+    background-color: #00458f;
 }
 
 /* @@@@@@@@@@@@@@@@@@@@@@@@@@@ SKILLS SECTION @@@@@@@@@@@@@@@@@@@@@@@@ */
-
-.skills-section h2 {
-    margin: auto;
-    width: 40%;
-    font-size: 3.5vw;
-    background-color: rgb(34, 69, 83);
-    color: white;
-    padding-left: 3vw;
-    padding-right: 3vw;
-    padding-top: 2px;
-    padding-bottom: 2px;
-    border-radius: 5px;
-    text-align: center;
-    align-items: center;
-    cursor: pointer;
-}
 
 .skills-rating {
     padding: 20px;
@@ -414,4 +449,67 @@ footer {
     width: 100%;
     background-color:  rgb(34, 69, 83);
     color: transparent;
+}
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@ WORK EXPERIENCE SECTION @@@@@@@@@@@@@@@@@@@@@@@@ */
+
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@ CERTIFICATIONS SECTION @@@@@@@@@@@@@@@@@@@@@@@@ */
+
+.certifications {
+    padding-top: 1px;
+   
+    margin: 20px; 
+    border-bottom: rgb(110, 110, 110) solid 1px;
+    
+}
+
+.course {
+    color: #007bff;
+    font-weight: bold;
+}
+
+.expiry {
+    line-height: 40%;
+    font-size: small;
+    color: rgb(99, 99, 99);
+}
+
+.issuedBy {
+    font-size: 0.95rem;
+}
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@ GROUPS AND LEADERSHIP ROLES SECTION @@@@@@@@@@@@@@@@@@@@@@@@ */
+
+.groups-licenses{
+    padding-top: 1px;
+    margin: 20px; 
+    border-bottom: rgb(110, 110, 110) solid 1px;
+}
+
+.organisation{
+    color: #007bff;
+    font-weight: bold;
+}
+
+.period {
+    line-height: 40%;
+    font-size: small;
+    color: rgb(99, 99, 99);
+}
+
+.details{
+    font-size: 0.95rem;
+}
+
+.testimonials-grids{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "left left"
+        "nothing right";
+    padding: 20px; 
+
+
 }
